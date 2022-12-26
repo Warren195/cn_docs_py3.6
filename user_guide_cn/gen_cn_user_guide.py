@@ -69,7 +69,7 @@ def setup_logging():
 def chapter1_introduction(pdf):
     pdf.add_title('用户手册')
     pdf.add_centred(f'版本 {reportlab.Version}')
-    pdf.add_centred(datetime.now().strftime('文档生成自 %Y/%m/%d %H:%M:%S %Z'))
+    pdf.add_centred('文档生成自 ' + datetime.now().strftime('%Y/%m/%d %H:%M:%S %Z'))
     pdf.next_toc_template()
     pdf.add_toc()
     pdf.next_normal_template()
