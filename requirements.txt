@@ -1,3 +1,2 @@
 reportlab==3.5.56
 fonttools==4.18.2
-relextra==3.5.59
